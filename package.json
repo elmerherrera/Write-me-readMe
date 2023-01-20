@@ -1,0 +1,23 @@
+{
+  "name": "write-me-readme",
+  "version": "1.0.0",
+  "description": "readme generator",
+  "main": "readMe.js",
+  "scripts": {
+    "test": "node readme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmerherrera/Write-me-readMe.git"
+  },
+  "author": "Elmer Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmerherrera/Write-me-readMe/issues"
+  },
+  "homepage": "https://github.com/elmerherrera/Write-me-readMe#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.4"
+  }
+}
