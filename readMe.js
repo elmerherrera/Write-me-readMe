@@ -2,15 +2,15 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 inquirer
--prompt([
+.prompt([
     {
         type:'input',
-        name:'filepath',
+        name:'filePath',
         message:'please enter the file path for the Readme'
     },
     {
         type:'input',
-        name:'projectile',
+        name:'projecTitle',
         message:'please enter title of your project',
     },
     {
@@ -27,10 +27,10 @@ inquirer
 
 .then((answers) => {
     const filePath = answers.filePath;
-    const projectitle = answers.projectitle;
+    const projecTitle = answers.projecTitle;
     const description = answers.description;
     const instructions = answers.instructions;
-    const fileContent = `# ${projectitle}\n\n ## Projesct Description\n ${description}\n\n ## Project Instructions \n\n ${instructions}`;
+    const fileContent = `# ${projecTitle}\n\n ## Projesct Description\n ${description}\n\n ## Project Instructions \n\n ${instructions}`;
 
     fs.writeFile(filePath, fileContent, (err) => {
         if (err) {
